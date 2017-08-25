@@ -64,6 +64,7 @@ You can always run PGCHAIN with the '--help' argument to see the available comma
         show-config    -  Displays the configuration information summary.
         clear-log      -  Clears (truncates) the log file.
         create-repo    -  Creates the PGCHAIN repository.
+        keep-recent    -  Keeps the most recent backups (according to the given argument).
         
 ```
 
