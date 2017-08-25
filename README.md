@@ -155,10 +155,23 @@ This will clear the log file (truncates the text file pgchain.log).
 **create-repo**:
 You need to run this command once you placed the python script file in your folder and changed the needed line in the python script file (see step 3 in the installation instructions above). This will create and empty repository database (using sqlite3 executable).
 
+**keep-recent**:
+This will delete all of the backups you have made (including base and WALs) **EXCEPT** for the most n recent chains you select in the second argument. An example call would look like this:
+
+```
+/{your_folder}/pgchain.py keep-recent 5
+```
+
 
 # USAGE EXAMPLE
 
 After installing PGCHAIN, the following example shows you how to always maintain 5 days back of you PostgreSQL cluster.
 
-TODO 
+1. Set to appropriate archive_command after the installation.
+2. Create a new CRON job as the following example:
+
+```
+0 0 * * * /{your_folder}/pgchain.py kee-recent 5
+```
+
 
