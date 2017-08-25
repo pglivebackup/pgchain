@@ -143,7 +143,7 @@ This will show you the configuration parameters of PGCHAIN:
    PostgreSQL Version:     9.6.3
    PostgreSQL Data Folder: /var/lib/pgsql/9.6/data
    PG_CTL Executable:      /usr/pgsql-9.6/bin/pg_ctl
-   PGCHAIN Version:        2017.10 Beta2
+   PGCHAIN Version:        2017.10
    PGCHAIN Repository DB:  /pg_chain/2018.01/pgchain.db
    PGCHAIN Log Status:     Enabled
 
@@ -171,7 +171,7 @@ After installing PGCHAIN, the following example shows you how to always maintain
 2. Create a new CRON job as the following example:
 
 ```
-0 0 * * * /{your_folder}/pgchain.py kee-recent 5
+0 0 * * * /{your_folder}/pgchain.py keeפ-recent 5
 ```
 
 
