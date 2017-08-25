@@ -171,7 +171,7 @@ After installing PGCHAIN, the following example shows you how to always maintain
 2. Create a new CRON job as the following example:
 
 ```
-0 0 * * * /{your_folder}/pgchain.py keeפ-recent 5
+0 0 * * * /{your_folder}/pgchain.py keep-recent 5
 ```
 
 
